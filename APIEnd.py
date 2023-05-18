@@ -7,14 +7,15 @@ from flask import Flask
 # Inglês e Português. Então, se você não entende inglês, Você vai ler a API em português.
 
 
-# cria os jsons - create the jsons
+# Create the JSONs - Cria os JSONs
 app = Flask(__name__)
 
 # Welcome - Bem-vindo
 @app.route('/')
 def index():
     return {'W': 'Welcome to API of The End!', 'B': 'Bem-vindo a API do Fim!'}
-    
+
+# Portuguese - Português
 @app.route('/pt')
 def pt():
     return {
@@ -165,14 +166,45 @@ def pt():
                 'ID': 'minecraft:end/kill_dragon'
             },
             '3': {
-                'Nome': 'Liberte o End',
-                'Descricao': 'Boa sorte',
-                'Requisitos': 'Mate o dragão ender',
-                'ID': 'minecraft:end/kill_dragon'
+                'Nome': 'A nova geração',
+                'Descricao': 'Obtenha o Ovo de Dragão',
+                'Requisitos': 'Pegue o ovo de dragão no seu inventário.',
+                'ID': 'minecraft:end/dragon_egg'
+            },
+            '4': {
+                'Nome': 'O começo do fim',
+                'Descricao': 'Escape da ilha',
+                'Requisitos': 'Jogue uma pérola de ender através de uma passagem do End.',
+                'ID': 'minecraft:end/enter_end_gateway'
+            },
+            '5': {
+                'Nome': 'Aceita uma pastilha?',
+                'Descricao': 'Recolha o bafo do dragão em um frasco de vidro.',
+                'Requisitos': 'Pegue uma garrafa de bafo do dragão no seu inventário',
+                'ID': 'minecraft:end/dragon_breath'
+            },
+            '6': {
+                'Nome': 'A cidade no fim do jogo',
+                'Descricao': 'Entre, o que poderia acontecer?',
+                'Requisitos': 'Entre em uma cidade do End.',
+                'ID': 'minecraft:end/find_end_city'
+            },
+            '7': {
+                'Nome': 'Ao infinito... e além!',
+                'Descricao': 'Encontre os elytras',
+                'Requisitos': 'Pegue um par de elytras no seu inventário.',
+                'ID': 'minecraft:end/elytra'
+            },
+            '8': {
+                'Nome': 'Ótima vista daqui de cima',
+                'Descricao': 'Levite até 50 blocos de altura pelos ataques de um Shulker',
+                'Requisitos': 'Tenha o efeito Levitação aplicado, e se mova a uma distância vertical de 50 blocos.',
+                'ID': 'minecraft:end/levitate'
             }
         }
-        #{'OE': 'O End?', 'LE': '', 'AG':'A nova geracao', 'RG': 'O comeco do fim', 'ON': 'O End.. de novo...', 'AP': 'Aceita uma pastilha?', 'TG': 'A cidade no fim do jogo', 'AA': 'Ao inifinito... e alem!', 'OC': 'Otima vista daqui de cima'}
     }
+
+# English - Inglês
 @app.route('/en')
 def en():
     return {
