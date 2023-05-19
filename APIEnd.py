@@ -6,7 +6,6 @@ from flask import Flask
 # Olá, sou o Victor e estou criando uma API para acessar a dimensão do Fim, do minecraft. E o código está em dois idiomas,
 # Inglês e Português. Então, se você não entende inglês, Você vai ler a API em português.
 
-
 # Create the JSONs - Cria os JSONs
 app = Flask(__name__)
 
