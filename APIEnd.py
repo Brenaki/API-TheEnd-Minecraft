@@ -52,15 +52,65 @@ def pt():
              '1':{
                  # Enderman
                  'Enderman': {
-                     # Drops
-                     'drop1': 'Pérola de ender',
-                     'drop2': '5 XP',
-                     'drop3': 'Qualquer bloco que está segurando'
+                    # Vida
+                    'vida': 40,
+                    'coracoes': 20,
+
+                    # Informações
+
+                    ## Comportamento
+                    'comportamento': 'Neutro',
+                    'comportamento_pacifico': 'Neutro',
+
+                    ## Geração
+                    'geracao': 'Em todo Fim, com níveis de iluminação 0',
+
+                    ## Dano por Vida
+                    'dano_por_vida_facil': 4.5,
+                    'dano_por_vida_normal': 7,
+                    'dano_por_vida_dificil': 10.5,
+
+                    ## Dano por coração
+                    'dano_por_coracoes_facil': 2.25,
+                    'dano_por_coracoes_normal': 3.5,
+                    'dano_por_coracoes_dificil': 5.25,
+
+                    ## Efeito após o dano e duração efeito
+                    'dano_efeito': None,
+                    'duracao_dano_efeito': None,
+
+                    # Drops
+                    'drop1': 'Pérola de ender',
+                    'drop2': '5 XP',
+                    'drop3': 'Qualquer bloco que está segurando'
                 }
             },
              '2':{
                 # Shulker
                  'Shulker': {
+                    # Vida
+                    'vida': 30,
+                    'coracoes': 15,
+
+                    # Informações
+
+                    ## Comportamento
+                    'comportamento': 'Hostil',
+                    'comportamento_pacifico': 'Passivo',
+
+                    ## Geração
+                    'geracao': 'Cidade do End',
+
+                    ## Dano por vida
+                    'dano_por_vida': 4,
+
+                    ## Dano por corações
+                    'dano_por_coracoes': 2,
+
+                    ## Efeito após o dano e duração efeito
+                    'dano_efeito': 'Levitação',
+                    'duracao_dano_efeito': '10 segundos',
+
                     # Drops
                     'drop1': 'Casco de shulker',
                     'drop2': '5 XP'     
@@ -70,6 +120,51 @@ def pt():
              '3':{
                 # Dragão do Ender
                 'Dragão_Ender': {
+                    # Vida
+                    'vida': 200,
+                    'coracoes': 100,
+
+                    # Informações
+
+                    ## Comportamento
+                    'comportamento': None,
+                    'comportamento_pacifico': None,
+
+                    ## Geração
+                    'geracao': 'O Fim',
+
+                    ## Dano por vida
+                    'dano_por_vida_pacifico': 0,
+                    'dano_por_vida_facil': 6,
+                    'dano_por_vida_normal': 10,
+                    'dano_por_vida_dificil': 15,
+
+                    ## Dano por corações
+                    'dano_por_coracoes_pacifico': 0,
+                    'dano_por_coracoes_facil': 3,
+                    'dano_por_coracoes_normal': 5,
+                    'dano_por_coracoes_dificil': 7.5,
+
+                    ## Atque especial
+                    'ataque_especial': {
+                        '1': {
+                            'nome': 'Ataque de respiração',
+                            'dano_vida': 6,
+                            'dano_coracoes': 3, 
+                            'duracao': '0,5 segundos'
+                        },
+                        '2': {
+                            'nome': 'Ataque bola de fogo explosiva',
+                            'dano_vida': 12,
+                            'dano_coracoes': 6, 
+                            'duracao': '0,5 segundos'
+                        }
+                    },
+
+                    ## Efeito após o dano e duração efeito
+                    'dano_efeito': None,
+                    'duracao_dano_efeito': None,
+
                     # Drops
                     'drop1': '12000 XP',
                     'drop2': 'Ovo de dragão'
