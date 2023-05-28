@@ -434,13 +434,13 @@ def en():
                                         'name': 'Dragon\'s Breath',
                                         'damage_life': 3,
                                         'damage_hearts': 1.5, 
-                                        'duration': '0,5 seconds'
+                                        'duration': '0,5 segundos'
                                         },
                                     '2': {
                                         'name': 'Dragon Fireball',
                                         'damage_life': 6,
                                         'damage_hearts': 3, 
-                                        'duration': '0,5 seconds'
+                                        'duration': '0,5 segundos'
                                         }
                                     },
 
