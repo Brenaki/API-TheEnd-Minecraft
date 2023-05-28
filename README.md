@@ -1,7 +1,7 @@
 # API-TheEnd-Minecraft
 <div>
 <h3>Link for Acess an API // Link para acessar a API</h3>
-<a href="https://api-theend-minecraft-production.up.railway.app">APIEnd</a>
+<a href="https://brenaki-apiend.up.railway.app">APIEnd</a>
 </div>
 
 
